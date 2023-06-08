@@ -55,7 +55,7 @@ demande(Question) :-
     asserta(no(Question)), fail).
 
 % Ici, on précise que yes/1 et no/1 sont des prédicats dynamiques, qu'ils peuvent être ajoutés ou retirés lors de l'exécution
-:- dynamic(yes/1, no/1).
+:- dynamic yes/1, no/1.
 
 /* On vérifie si le patient souffre d'un symptôme donné en posant une question. 
 On définira le prédicat correspondant à la réponse auquel une valeur est attribuée */
