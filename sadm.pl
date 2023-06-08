@@ -1,7 +1,8 @@
 % C'est où démarre le programme
 diagnostic :-
     hypothese(Maladie),
-    write("Au vu des réponses, on suppose que vous souffrez de "),
+    nl,
+    write("Au vu des reponses, on suppose que vous souffrez de "),
     write(Maladie),
     nl,
     suggestion(Maladie),
@@ -15,9 +16,9 @@ hypothese(inconnu).
 % On propose quelques suggestions si on arrive à déterminer de quoi le patient souffre
 suggestion(paludisme) :-
     nl,
-    write("Comme traitement, via médicament, on propose : "),
+    write("Comme traitement, via medicament, on propose : "),
     nl,
-    write("- Artémisinine et dérivés"),
+    write("- Artemisinine et derives"),
     nl,
     write("- Avotaquone-proguanil"),
     nl,
@@ -44,7 +45,7 @@ paludisme :-
 
 % Ce prédicat va nous permettre de poser une question à l'utilisateur et d'effectuer un traitement selon sa réponse (oui ou non)
 demande(Question) :-
-    write("Avez-vous ce symptôme : "),
+    write("Avez-vous ce symptome : "),
     write(Question),
     write(" ? (o/n) "),
     read(Reponse),
@@ -62,11 +63,11 @@ On définira le prédicat correspondant à la réponse auquel une valeur est att
 verifie(Symptome) :-
     (yes(Symptome)
     ->
-    true;
+    true ;
     (no(Symptome)
     ->
-    fail;
-    demande(S))).
+    fail ;
+    demande(Symptome))).
 
 % On retire toutes les réponses aux précédents symptômes pour recommencer avec une autre hypothèse.
 undo :- retract(yes(_)), fail.
