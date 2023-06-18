@@ -10,7 +10,7 @@ On doit consulter le programme dans un interpréteur **SWI-Prolog** en faisant :
 - `consult('sadm.pl').` puis en appuyant sur la touche `Entrée`.
 - en ouvrant grâce au menu de l'interpréteur puis cliquer sur **File -> Consult...** pour choisir l'emplacement du fichier comme ci-dessous.
 
-![Ouverture via menu](file.png)
+! [Ouverture via menu](file.png)
 
 ### Lancement
 Une fois le fichier chargé, on entre dans l'interpréteur la commande `diagnostic.` qui est le prédicat principal, puis on confirme avec la touche `Entrée`.
