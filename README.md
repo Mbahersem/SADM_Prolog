@@ -9,6 +9,7 @@ Dépôt du système d'aide à la décision médicale. Projet donné dans le cadr
 On doit consulter le programme dans un interpréteur **SWI-Prolog** en faisant :
 - `consult(sadm.pl).` puis en appuyant sur la touche `Entrée`.
 - en ouvrant grâce au menu de l'interpréteur puis cliquer sur **File -> Consult...** pour choisir l'emplacement du fichier comme ci-dessous.
+
 ![Ouverture via menu](file.png)
 
 ### Lancement
